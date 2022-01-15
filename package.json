@@ -1,0 +1,25 @@
+{
+  "name": "anime-quote",
+  "version": "1.0.0",
+  "description": "get random anime qoute",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webPrsnr/anime-quote.git"
+  },
+  "keywords": [
+    "cli",
+    "js",
+    "api"
+  ],
+  "author": "webPrsnr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webPrsnr/anime-quote/issues"
+  },
+  "homepage": "https://github.com/webPrsnr/anime-quote#readme"
+}
