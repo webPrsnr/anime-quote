@@ -23,18 +23,16 @@ function prepareOutput() {
   return { asciImage, average, mainString, secondString };
 }
 
-function consoleImage() {
+export function consoleImage(response) {
   const { asciImage, average, mainString, secondString } = prepareOutput();
   asciImage.forEach((el, index) => {
     if (index === average) {
       el += tab.repeat(mainString);
-      el += "Some amazing quote saying something special";
+      el += response.quote;
     } else if (index === average + 2) {
       el += tab.repeat(secondString);
-      el += "Nice to meet you";
+      el += response.character;
     }
     console.log(el);
   });
 }
-
-consoleImage();
