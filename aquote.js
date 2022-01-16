@@ -1,5 +1,5 @@
 import { getAnimeQuote } from "./services/api.services.js";
-import { consoleImage } from "./helpers/construct-quote.js";
+import { consoleImage } from "./helpers/console-quote.js";
 
 async function getRandomQuote() {
   const data = await getAnimeQuote();
