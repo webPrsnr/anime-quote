@@ -1,4 +1,5 @@
 import { prepareOutput, tab, splitQuote } from "./construct-quote.js";
+import { paintCyan, paintGren } from "./color-quote.js";
 
 export function consoleImage(response) {
   const { asciImage, average, mainString, secondString } = prepareOutput();
@@ -8,11 +9,11 @@ export function consoleImage(response) {
     if (index === average) {
       quoteArray.forEach((arrayEl, arrayInd, quoteArray) => {
         array[index + arrayInd] += tab.repeat(mainString);
-        array[index + arrayInd] += arrayEl;
+        array[index + arrayInd] += paintCyan(arrayEl);
       });
     } else if (index === average + quoteArray.length) {
       array[index] += tab.repeat(secondString);
-      array[index] += response.character;
+      array[index] += paintGren("© ") + response.character;
     }
   });
 
