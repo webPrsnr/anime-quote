@@ -2,7 +2,7 @@
   "name": "anime-quote",
   "version": "1.0.0",
   "description": "get random anime qoute",
-  "main": "index.js",
+  "main": "aquote.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
