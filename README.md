@@ -4,7 +4,7 @@
 
 # installation
 
-`git clone git@github.com:webPrsnr/anime-quote.git`
+`git clone git@github.com:webPrsnr/anime-quote.git`<br>
 `npm i`
 
 # usage
